@@ -96,13 +96,13 @@ def ave_cent(cent):
         if ([minls in cent[cent['track_id']==tid[idx]]['time']]):
             rows = minls
         else:
-            print 'centrosome not continuous in time, missing frame'
+            print( 'centrosome not continuous in time, missing frame')
     else:
         leng = max(cent['time'])
         if (cent[cent['time']==leng].shape[0]==2):
             rows = leng
         else:
-            print 'centrosome not continuous in time, missing frame'
+            print( 'centrosome not continuous in time, missing frame')
     c1 = np.column_stack((cent['x'][0:rows],cent['y'][0:rows],cent['z'][0:rows]))
     c2 = np.column_stack((cent['x'][rows:rows*2],cent['y'][rows:rows*2],cent['z'][rows:rows*2]))
     return np.mean(c1,axis=0),np.mean(c2,axis=0)
