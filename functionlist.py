@@ -49,7 +49,7 @@ def importspots(types,channel,cell,plot):
     if plot:
         ax=plot_spot(spot,'.','b',1) 
         ax=plot_spot(cent,'o','r',50) 
-        ax.set_title(types+'channel '+str(channel)+'cell'+str(cell))
+        ax.set_title(types+' channel '+str(channel)+'cell'+str(cell))
     return spot,cent
 
 
