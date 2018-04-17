@@ -142,8 +142,8 @@ def rotatespots(dat,cent,plot):
         ax.set_yticks(np.arange(int(min(Y)-1),int(max(Y))+2,1))
         ax.set_ylim(min(Y),max(Y))
         ax.set_xlim(min(X),max(X))
-	ax.set_xlabel('x')
-	ax.set_xlabel('y')
+        ax.set_xlabel('x')
+        ax.set_xlabel('y')
         ax.grid(which='both')
     return X,Y,c1[1:],c2[1:],dur
 
